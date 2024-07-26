@@ -14,3 +14,4 @@ def send_command_route():
 @robot_bp.route('/send_velocity', methods=['POST'])
 def send_velocity_route():
     return handle_send_velocity()
+

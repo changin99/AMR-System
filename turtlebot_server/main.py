@@ -6,4 +6,4 @@ app = Flask(__name__)
 app.register_blueprint(robot_bp, url_prefix='/robot')
 
 if __name__ == '__main__':
-    app.run(host='172.30.1.90', port=config.ROBOT_SERVER_PORT)
+    app.run(host=config.TURTLEBOT_SERVER_HOST, port=config.TURTLEBOT_SERVER_PORT)
